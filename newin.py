@@ -11,5 +11,9 @@ class Dog:
 #Child class
 class Bulldog(Dog):
     #method of a child class
+    def __init__(self):
+        super().__init__()
+        print("Beware I am a bull dog")
+
     def run(self,speed):
         return "{} runs in {}speed" .format(self.name,speed)
